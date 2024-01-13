@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct LoginResponse: Codable {
-    let error: Bool
-    let reason: String?
-    let token: String?
-    let userId: UUID
-    let reqId: String
+public struct LoginResponse: Codable {
+    public let error: Bool
+    public let reason: String?
+    public let token: String?
+    public let userId: UUID
+    public let reqId: String
     
     init(error: Bool, reason: String?, token: String?, userId: UUID, reqId: String) {
         self.error = error

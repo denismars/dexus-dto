@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct RegisterRequest: Codable {
-    
+public struct RegisterRequest: Codable {
+    public var username: String
+    public var password: String
 }
